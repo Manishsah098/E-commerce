@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation / Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyStore</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#wishlist">Wishlist</a></li>
+                <li><a href="#orders">Orders</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#login">Login/Register</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to Manish Store</h1>
+            <p>Beyond Shopping — It’s an Experience.</p>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product-list">
+                <!-- Sample products -->
+                <div class="product-card">
+                    <img src="T-shirt.jpg" alt="Product 1">
+                    <h3>Best Quality Top  T-shirt</h3>
+                    <p>Price: ₹499</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="smartwatches.webp" alt="Product 2">
+                    <h3>Top Quality Smartwatch</h3>
+                    <p>Price: ₹699</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+                 <div class="product-card">
+                    <img src="ladies dress.webp" alt="Product 3">
+                    <h3>Ladies Kurti</h3>
+                    <p>Price: ₹449</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+                 <div class="product-card">
+                    <img src="laptop.webp" alt="Product 2">
+                    <h3>Asus Laptop</h3>
+                    <p>Price: ₹59,999</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+                 <div class="product-card">
+                    <img src="refrigerator.webp" alt="Product 2">
+                    <h3>Best Referigerator</h3>
+                    <p>Price: ₹15,999</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+                 <div class="product-card">
+                    <img src="iphone.webp" alt="Product 2">
+                    <h3>iphone 1,59,000</h3>
+                    <p>Price: ₹599</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+                 <div class="product-card">
+                    <img src="teddy.webp" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Price: ₹549</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+                 <div class="product-card">
+                    <img src="shoes.jpg" alt="Product 2">
+                    <h3>Shoes for handsome</h3>
+                    <p>Price: ₹599</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+                 <div class="product-card">
+                    <img src="dairymilk.jpg" alt="Product 2">
+                    <h3>Dairy Milk</h3>
+                    <p>Price: ₹599</p>
+                    <button class="add-wishlist">Add to Wishlist</button>
+                    <button class="place-order">Order Now</button>
+                </div>
+              
+                <!-- add more as needed -->
+            </div>
+        </section>
+
+        <!-- Wishlist Section -->
+        <section id="wishlist">
+            <h2>Your Wishlist</h2>
+            <ul id="wishlist-items">
+                <li>No items in wishlist.</li>
+            </ul>
+        </section>
+
+        <!-- Orders Section -->
+        <section id="orders">
+            <h2>Your Orders</h2>
+            <ul id="order-items">
+                <li>No orders placed yet.</li>
+            </ul>
+        </section>
+
+        <!-- Comments & Reviews Section -->
+        <section id="reviews">
+            <h2>Comments & Reviews</h2>
+            <div id="review-form">
+                <h3>Leave a Review</h3>
+                <textarea id="review-text" placeholder="Write your review…"></textarea>
+                <input type="text" id="review-user" placeholder="Your name">
+                <button id="submit-review">Submit Review</button>
+            </div>
+            <div id="review-list">
+                <!-- reviews will appear here -->
+            </div>
+        </section>
+
+        <!-- Customer Care & Reporting Section -->
+        <section id="contact">
+            <h2>Customer Care & Reporting</h2>
+            <form id="contact-form">
+                <input type="text" id="contact-name" placeholder="Your name" required>
+                <input type="email" id="contact-email" placeholder="Your email" required>
+                <textarea id="contact-message" placeholder="Your message…" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are MyStore, committed to delighting customers.</p>
+        </section>
+
+        <!-- Login / Registration Section -->
+        <section id="login">
+            <h2>Login / Register</h2>
+            <div class="forms-container">
+              
+                <form id="login-form">
+                    <h3>Login</h3>
+                    <input type="email" id="login-email" placeholder="Email" required>
+                    <input type="password" id="login-password" placeholder="Password" required minlength="6">
+                    <button type="submit">Login</button>
+                </form>
+                <form id="register-form">
+                    <h3>Register</h3>
+                    <input type="text" id="reg-name" placeholder="Full Name" required>
+                    <input type="email" id="reg-email" placeholder="Email" required>
+                    <input type="password" id="reg-password" placeholder="Password" required minlength="6">
+                    <input type="password" id="reg-password2" placeholder="Confirm Password" required minlength="6">
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MyStore. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
